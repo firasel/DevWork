@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../Hero/Hero";
-import Navbar from "../Navbar/Navbar";
+import Header from "../Header/Header";
+import SearchDomain from "../SearchDomain/SearchDomain";
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
-      <Hero />
+      <Header />
+      <SearchDomain />
     </div>
   );
 };
