@@ -1,11 +1,11 @@
-import logo from './logo.svg';
+import "antd/dist/antd.css";
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import Home from "./components/Home/Home/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar></Navbar>
+    <div>
+      <Home />
     </div>
   );
 }
