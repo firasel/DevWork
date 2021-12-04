@@ -1,0 +1,84 @@
+.searchContainer {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  .searchInput {
+    width: 50%;
+    margin: auto;
+    position: relative;
+    input {
+      width: 100%;
+      padding: 12px 22px;
+      border: 1px solid #dbdcff;
+      border-radius: 40px;
+      font-size: 1.1rem;
+    }
+    button {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      box-shadow: 0px 0px 3px #002bb7;
+      transition: all 0.2s;
+      &:hover {
+        transition: all 0.2s;
+        background-color: #002bb7;
+        color: white;
+        box-shadow: 0px 0px 6px #002bb7;
+      }
+    }
+  }
+  .domainExt {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: center;
+    button:nth-child(1) {
+      margin-left: 0px;
+    }
+    button:nth-child(2) {
+      background: #002bb7;
+      color: white;
+    }
+    button {
+      margin-left: 20px;
+      padding: 6px 23px;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .searchInput {
+    width: 100% !important;
+    input {
+      width: 100%;
+      padding: 10px 22px !important;
+      border: 1px solid #dbdcff;
+      font-size: 1rem !important;
+    }
+    button {
+      right: 4px !important;
+      padding: 6px 12px !important;
+      height: auto !important;
+      top: 5px !important;
+    }
+  }
+  .domainExt {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    padding: 0.8rem 0;
+    button:nth-child(1) {
+      margin-left: 0px;
+    }
+    button:nth-child(2) {
+      background: #002bb7;
+      color: white;
+    }
+    button {
+      margin-left: 5px !important;
+      padding: 6px 15px !important;
+      margin-bottom: 10px;
+    }
+  }
+}
