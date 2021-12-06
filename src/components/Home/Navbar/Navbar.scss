@@ -15,6 +15,11 @@
       color: white;
     }
   }
+
+  .ant-affix {
+    position: relative !important;
+  }
+  
   .ant-anchor-wrapper {
     background: none;
   }
@@ -69,9 +74,29 @@
   .mobileVisible {
     display: none;
   }
+}
 
-  .navbarTitle {
-    color: red;
+@media only screen and (max-width: 767px) {
+  .mobileVisible {
+    display: block !important;
+    button {
+      color: #002bb7;
+      background: #ffffff;
+      border: 0;
+      font-size: 1.5rem;
+      font-weight: 800;
+      border-radius: 4px;
+      width: auto;
+      height: auto;
+      padding: 0px 10px;
+      &:hover {
+        color: #0027a8;
+      }
+    }
+  }
+
+  .mobileHidden {
+    display: none;
   }
 }
 

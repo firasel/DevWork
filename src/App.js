@@ -1,5 +1,5 @@
 import "antd/dist/antd.css";
-import './App.css';
+import "./App.css";
 import Home from "./components/Home/Home/Home";
 
 function App() {
