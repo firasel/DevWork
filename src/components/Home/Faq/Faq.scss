@@ -1,0 +1,48 @@
+.faqContainer {
+  background-image: linear-gradient(#3200cd, #3600af);
+  overflow: hidden;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+  div {
+    div {
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      h1,
+      h4,
+      h5 {
+        color: white;
+      }
+      h1 {
+        margin-top: 1rem !important;
+      }
+    }
+    .contentCol {
+      display: flex;
+      align-items: center;
+      .faqAccordion {
+        .ant-collapse {
+          background: none !important;
+          color: white !important;
+          border: 0px !important;
+          .ant-collapse-item {
+            margin-bottom: 1rem !important;
+            border: 1px solid white !important;
+            .ant-collapse-header {
+              color: white !important;
+            }
+            .ant-collapse-content {
+              background: none !important;
+              color: white !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

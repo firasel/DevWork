@@ -1,5 +1,75 @@
 .navbarContainer {
-  .navbarTitle {
-    color: red;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 2rem;
+    }
+    h2 {
+      margin: 0;
+      padding-left: 5px;
+      color: white;
+    }
+  }
+  .ant-affix {
+    position: relative !important;
+  }
+  .ant-anchor-wrapper {
+    background: none;
+  }
+
+  .ant-anchor {
+    display: flex;
+  }
+
+  .ant-anchor-ink {
+    display: none;
+  }
+
+  .ant-anchor-link {
+    padding: 0 20px;
+    line-height: 1.4;
+    position: relative;
+    a {
+      color: white;
+      font-size: 1rem;
+    }
+  }
+
+  .ant-anchor-link:before,
+  .ant-anchor-link:after {
+    content: "";
+    background: #1890ff;
+    width: 1px;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 30%;
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+
+  .ant-anchor-link:after {
+    left: auto;
+    right: 30%;
+  }
+
+  .ant-anchor-link.ant-anchor-link-active:before,
+  .ant-anchor-link:hover:before {
+    left: 5%;
+    opacity: 1;
+  }
+
+  .ant-anchor-link.ant-anchor-link-active:after,
+  .ant-anchor-link:hover:after {
+    right: 5%;
+    opacity: 1;
+  }
+  .mobileVisible {
+    display: none;
   }
 }
