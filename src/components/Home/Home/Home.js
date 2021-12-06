@@ -1,5 +1,4 @@
 import React from "react";
-import Faq from "../Faq/Faq";
 import Header from "../Header/Header";
 import SearchDomain from "../SearchDomain/SearchDomain";
 
@@ -8,7 +7,6 @@ const Home = () => {
     <div>
       <Header />
       <SearchDomain />
-      <Faq />
     </div>
   );
 };
