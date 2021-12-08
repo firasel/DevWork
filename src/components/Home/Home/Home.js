@@ -1,5 +1,6 @@
 import React from "react";
-import Faq from '../Faq/Faq';
+import Faq from "../Faq/Faq";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import SearchDomain from "../SearchDomain/SearchDomain";
 
@@ -8,7 +9,8 @@ const Home = () => {
     <div>
       <Header />
       <SearchDomain />
-      <Faq/>
+      <Faq />
+      <Footer />
     </div>
   );
 };
