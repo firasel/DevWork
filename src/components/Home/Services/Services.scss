@@ -1,0 +1,13 @@
+.servicesContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-row{
+    padding-top: 30px;
+    .services-items{
+        text-align: center;
+    }
+}
