@@ -46,3 +46,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 767px) {
+  .faqContainer {
+    h1 {
+      font-size: 1.7rem !important;
+    }
+    h5 {
+      font-size: 0.9rem !important;
+    }
+    h4 {
+      font-size: 1.1rem !important;
+      margin-bottom: 1rem;
+    }
+  }
+}

@@ -7,7 +7,7 @@ const Faq = () => {
   const { Title } = Typography;
   const { Panel } = Collapse;
   return (
-    <div className="faqContainer">
+    <div className="faqContainer" id="faq">
       <Row className="container-fluid">
         <Col md={12}>
           <img src={FaqImg} alt="Faq design" />

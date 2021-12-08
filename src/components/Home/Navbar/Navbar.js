@@ -1,4 +1,5 @@
 import { Anchor, Button, Drawer, Typography } from "antd";
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import logo from "../../../images/logo.svg";
 import "./Navbar.scss";
@@ -10,24 +11,33 @@ const Navbar = () => {
 
   return (
     <div className="navbarContainer">
-      <div className="logo">
+      <motion.div
+        className="logo"
+        initial={{ x: "-100vh" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 50 }}
+      >
         <img src={logo} alt="App Logo" />
         <Title level={2}>DevWork</Title>
-      </div>
+      </motion.div>
       <div className="mobileHidden">
-        <Anchor targetOffset="65">
-          <Link href="#hero" title="Home +" />
-          <Link href="#hosting" title="Hosting +" />
-          <Link href="#pages" title="Pages +" />
-          <Link href="#news" title="News" />
-          <Link href="#contact" title="Contact" />
+        <Anchor>
+          <Link href="#hero" title="Home" />
+          <Link href="#services" title="Services" />
+          <Link href="#price" title="Price" />
+          <Link href="#faq" title="FAQ" />
         </Anchor>
       </div>
-      <div className="mobileHidden">
+      <motion.div
+        className="mobileHidden"
+        initial={{ x: "100vh" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 50 }}
+      >
         <Button className="btnDesignBlue" size="large" shape="round">
           SignUp
         </Button>
-      </div>
+      </motion.div>
       <div className="mobileVisible">
         <Button onClick={() => setVisible(true)}>
           <i className="fas fa-bars"></i>
@@ -37,13 +47,13 @@ const Navbar = () => {
           closable={true}
           onClose={() => setVisible(false)}
           visible={visible}
+          onClick={() => setVisible(false)}
         >
-          <Anchor targetOffset="65">
-            <Link href="#hero" title="Home +" />
-            <Link href="#hosting" title="Hosting +" />
-            <Link href="#pages" title="Pages +" />
-            <Link href="#news" title="News" />
-            <Link href="#contact" title="Contact" />
+          <Anchor>
+            <Link href="#hero" title="Home" />
+            <Link href="#services" title="Services" />
+            <Link href="#price" title="Price" />
+            <Link href="#faq" title="FAQ" />
           </Anchor>
         </Drawer>
       </div>
