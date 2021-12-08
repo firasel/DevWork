@@ -1,13 +1,22 @@
-.servicesContainer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.serviceContainer {
+  padding: 3rem 15px 5rem 15px;
+  .serviceTitle {
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+  }
 }
 
-.services-row{
-    padding-top: 30px;
-    .services-items{
-        text-align: center;
-    }
+.services-row {
+  padding-top: 30px;
+  .services-items {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }
