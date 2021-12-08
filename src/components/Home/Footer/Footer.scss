@@ -1,0 +1,29 @@
+.footerContainer {
+  padding: 2.3rem 0 0 0;
+  background-color: #000c35;
+  div > div > div {
+    h2 {
+      color: white;
+      margin-top: 0.5rem !important;
+    }
+    h5 {
+      color: white;
+    }
+    .footerTitleSecond {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  .footerTitle {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #37477c;
+  }
+  p {
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}
