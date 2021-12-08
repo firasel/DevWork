@@ -1,0 +1,27 @@
+.price-container{
+    background-color: #f5f5f5;
+    margin: 70px 0px;
+    padding: 70px 0px;
+    .price-number{
+        size: 20px;
+        display: inline-block;
+    }
+    .price-item{
+        background-color: #ffff !important;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .price-text{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .price-text>p{
+        width: 400px;
+        background-color: white;
+        padding: 10px 30px;
+        border-radius: 20px;
+     }
+    
+}
